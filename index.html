@@ -15,77 +15,183 @@
     <body>
         <header class = "header">
             <div class = "header__logo-box">
-                <img src="insert logo here" alt="Logo" class= "header__logo">
+                <img src="https://i.imgur.com/X18Zbxp.png" alt="Logo" class= "header__logo">
             </div>
             <div class="header__text-box">
                 <h1 class="heading-primary">
                     <span class="heading-primary--main">Angie Ochirbal</span>
                     <span class="heading-primary--sub">Software Engineer</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Project Portfolio</a>
+                <a href="#portfolio" class="btn btn--white btn--animated">Project Portfolio</a>
+                <!-- <input type="button" onClick="document.getElementById('portfolio').scrollIntoView();" /> -->
             </div> 
         </header>    
 
         <main>
-           <section class="section-about">
-               <h2 class="heading-secondary">
-                   <span class="heading-secondary--main">About</span>
-                   <span class="heading-secondary--sub">Who Is Angie?</span>
-                   <p>I was born and raised in Ulaanbaatar, Mongolia. As long as i can remember, i was always interested in designing as a little girl. I remember i used to make barbie clothes from scratch and make collage from old fashion magazines for reference. As I grew up, i slowly translated design into how i dressed. Then, i fell in love with drawing/painting in highschool which resulted in taking multiple AP drawing classes. However, i chose to go in the Business direction and graduated with a Bachelors in Business Administration. My senior year in college, i took an introduction to Web Development Class and just </p>
-               </h2>
-           </section>
            <section class="section-skills">
                <h2 class="heading-secondary">
                 <span class="heading-secondary--main">Skills</span> 
-                <span class="heading-secondary--subwhite">My Toolbox</span>
+                <span class="heading-secondary--sub">My Toolbox</span>
+               </h2>
+               <div class="icon-container">
+                <img src= "https://i.imgur.com/aK3meI2.png" style="width:80px;height:80px;"/>
+                <img src= "https://i.imgur.com/IrDpDev.png" style="width:80px;height:80px;"/>
+                <img src= "https://i.imgur.com/ZmZ0D0E.png" style="width:80px;height:80px;"/>
+                <img src= "https://i.imgur.com/HNdPqby.png" style="height:80px"/>
+                <img src= "https://i.imgur.com/dst6F7y.png" style="height:60px"/>
+                <img src= "https://i.imgur.com/JLgW3p4.png" style="height:60px"/>
+                <img src= "https://i.imgur.com/Ys0CrjR.png" style="width:80px;height:80px;"/>
+                <img src= "https://i.imgur.com/uqcOOt1.png" style="height:80px"/>
+                <img src= "https://i.imgur.com/kUBomyX.png" style="height:80px"/>
+                <img src= "https://i.imgur.com/c1kk8nH.png" style="height:80px"/>
+               </div>
+
+           </section>
+           <section class="section-about">
+               <h2 class="heading-secondary">
+                <span class="heading-secondary--main">About</span>
+                   <span class="heading-secondary--subwhite">Who Is Angie?</span>
+                   <div class="about-text">
+                   <p>I was born and raised in Ulaanbaatar, Mongolia. As long as i can remember, i was always interested in designing as a little girl. I remember i used to make barbie clothes from scratch and make collage from old fashion magazines for reference. As I grew up, i slowly translated design into how i dressed. Then, i fell in love with drawing/painting in highschool which resulted in taking multiple AP drawing classes. However, i chose to go in the Business direction and graduated with a Bachelors in Business Administration. My senior year in college, i took an introduction to Web Development Class and just </p>
+                   </div>
                </h2>
            </section>
            <section class="section-project">
                <div>
                     <h2 class="heading-secondary">
-                        <span class="heading-secondary--main">Project Portfolio</span> 
+                        <span class="heading-secondary--main" id="portfolio" >Project Portfolio</span> 
                         <span class="heading-secondary--sub">Stuff I've Built</span>
                     </h2>
                 </div>
-               <div class="card">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="https://i.imgur.com/skupKfz.png" alt="Avatar" style="width:300px;height:300px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>CONCENTRATION</h1>
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JAVASCRIPT</p>
-                      </div>
+
+                <div class="card-grid">
+                    <div class="card">
+                            <div class="card__side flip-card-front">
+                                <img class="desc-img" src="https://i.imgur.com/skupKfz.png" alt="Avatar" style="width:300px;height:300px;">
+                                <h1 class="title">Stellar Concentration</h1>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>JAVASCRIPT</p>
+                            </div>
+                            <div class="card__side flip-card-back">
+                                <div class="card__cta">
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                            A fully functional clone of the popular game Concentration.
+                                            Built using pure HTML, CSS, & JavaScript.
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <a target="_blank" href="https://enkhjino.github.io/concentration/"><span
+                                        class="link-effect">Deployed Version</span></a><br>
+                                <a class="link-gh" target="_blank"
+                                    href="https://github.com/enkhjino/concentration">&nbsp;&nbsp;<i
+                                        class="fa fa-github"></i>&nbsp;&nbsp;<img class = "image" src="./assets/github-icon.png">Source</a>
+                                </div>
+                            </div>
                     </div>
-                  </div>
-               </div>
-               <div class="card">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="https://i.imgur.com/b4haGyy.png" alt="Avatar" style="width:300px;height:300px;">
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>Happy Hikers</h1>
-                        <p>NodeJS</p>
-                        <p>ExpressJS</p>
-                        <p>MongoDB</p>
-                      </div>
+               
+               
+               
+                    <div class="card">
+                            <div class="card__side flip-card-front">
+                                <img class="desc-img" src="https://i.imgur.com/b4haGyy.png" alt="Avatar" style="width:300px;height:300px;">
+                                <h1 class="title">Happy Hikers</h1>
+                                <p>NodeJS</p>
+                                <p>ExpressJS</p>
+                                <p>MongoDB</p>
+                            </div>
+                            <div class="card__side flip-card-back">
+                                <div class="card__cta">
+                                    <div class="card__box">
+                                        <div class="card__description">
+                                            <p>
+                                                Happy Hikers is a full CRUD application with Google Authentication.
+                                                This app connects hiking lovers to share, review and view hiking trails.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <a target="_blank" href="https://happy-hikers.herokuapp.com//"><span
+                                            class="link-effect">Deployed Version</span></a><br>
+                                    <a class="link-gh" target="_blank"
+                                        href="https://github.com/enkhjino/happy-hikers">&nbsp;&nbsp;<i
+                                            class="fa fa-github"></i><img class = "image" src="./assets/github-icon.png">&nbsp;&nbsp;Source</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                    <div class="card">
+                        <div class="card__side flip-card-front">
+                            <img class="desc-img" src="https://i.imgur.com/smd5bKo.png" alt="Avatar" style="width:300px;height:300px;">
+                            <h1 class="title">Hidden Gems</h1>
+                            <p>Django/p>
+                            <p>PostgreSQl</p>
+                            <p>AWS</p>
+                        </div>
+                        <div class="card__side flip-card-back">
+                            <div class="card__cta">
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                            This app uses the mapbox API to display hiddens "gems" all over USA.
+                                            Utilizes Django’s built in authentication which allows signed in users the 
+                                            ability to perform full CRUD on hidden gems, reviews and photos. Implements BootStrap.
+
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <a target="_blank" href="https://hidden-gems-usa.herokuapp.com/"><span
+                                        class="link-effect">Deployed Version</span></a><br>
+                                <a class="link-gh" target="_blank"
+                                    href="https://github.com/enkhjino/Hidden-Gems">&nbsp;&nbsp;<i
+                                        class="fa fa-github"></i><img class = "image" src="./assets/github-icon.png">&nbsp;&nbsp;Source</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="card">
+                        <div class="card__side flip-card-front">
+                            <img class="desc-img" src="https://i.imgur.com/jUCpskD.png?1" alt="Avatar" style="width:300px;height:300px;">
+                            <h1 class="title">Paw Friend</h1>
+                            <p>MERN Stack</p>
+                            <p>PetFinderAPI</p>
+                            <!-- <p>React</p> -->
+                        </div>
+                        <div class="card__side flip-card-back">
+                            <div class="card__cta">
+                                <div class="card__box">
+                                    <div class="card__description">
+                                        <p>
+                                            A full stack web application built using React, Express.js, Node.js and MongoDB. 
+                                            The application lets users find their perfect pet through a survey they fill out according to their own criteria. 
+                                            It calls the PetFinder API using the survey to fetch matching pets.
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <a target="_blank" href="https://paw-friend.herokuapp.com/"><span
+                                        class="link-effect">Deployed Version</span></a><br>
+                                <a class="link-gh" target="_blank"
+                                    href="https://github.com/enkhjino/paw_friend">&nbsp;&nbsp;<i
+                                        class="fa fa-github"></i>&nbsp;&nbsp;<img class = "image" src="./assets/github-icon.png">Source</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-               </div>
+                </div>
            </section>
         </main>
     </body>
     <footer>
         <div class="footer">
-            <h1>Resume</h1>
-            <h1>LinkedIn</h1>
-            <h1>GitHub</h1>
-            <h1>Email</h1>
+            <h1><a href="https://docs.google.com/document/d/1hicKkIo7fNf-aoZQKockOwq_pMYRUE7QM-mpzZ4PFgM/edit?usp=sharing" target="_blank"><img class = "image" src="./assets/resume-icon.png"/>Resume</a></h1>
+            <h1><a href="https://www.linkedin.com/in/angie-ochirbal/" target="_blank"><img class = "image" src="./assets/linkedin-icon.png"/>LinkedIn</a></h1>
+            <h1><a href="https://github.com/enkhjino" target="_blank"><img class = "image" src="./assets/github-icon.png"/>GitHub</a></h1>
+            <h1><a href="mailto:angie.ochir@gmail.com" target="_blank"><img class = "image" src="./assets/email-icon.png"/>Email</a></h1>
         </div>
     </footer>
 </html>
