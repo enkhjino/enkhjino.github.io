@@ -386,4 +386,7 @@ a:hover {
   .about-text {
     margin: 20px 0 0 0;
   }
+  .section-about {
+    padding-top: 100px;
+  }
 }
